@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="he" dir="rtl">
 	<head>
 		<title>SYNA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Heebo:wght@300;400;600;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/myassets.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -49,17 +52,22 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.png" alt="" style="width:350px; height:auto;" /></span>
 						<!-- <h1><b>S Y N A</b></h1> -->
-						<h1><b>Remove the Human Bottleneck. Unlock True Manufacturing Flexibility.</b></h1>
-						<p> <b>SYNA</b> merges human intuition with robotic precision - redefining how people and machines work together to build the world’s most complex technologies.</p>
+						<h1 data-i18n-html="header.tagline"><b>מסירים את צוואר הבקבוק האנושי. משחררים גמישות ייצור אמיתית.</b></h1>
+						<p data-i18n-html="header.sub"><b>SYNA</b> משלבת אינטואיציה אנושית עם דיוק רובוטי — ומגדירה מחדש כיצד אנשים ומכונות עובדים יחד כדי לבנות את הטכנולוגיות המורכבות בעולם.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Who We Are</a></li>
-							<li><a href="#first">Industry Challenges</a></li>
-							<li><a href="#second">Our Mission</a></li>
-							<li><a href="#cta">About Us</a></li>
+							<li><a href="#intro" class="active" data-i18n="nav.whoWeAre">מי אנחנו</a></li>
+							<li><a href="#first" data-i18n="nav.industryChallenges">אתגרי התעשייה</a></li>
+							<li><a href="#second" data-i18n="nav.ourMission">המשימה שלנו</a></li>
+							<li><a href="#cta" data-i18n="nav.aboutUs">עלינו</a></li>
+							<!-- <li class="lang-switch">
+								<button type="button" class="lang-btn is-active" data-lang="he" aria-pressed="true">עברית</button>
+								<span class="lang-sep">|</span>
+								<button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+							</li> -->
 						</ul>
 					</nav>
 
@@ -71,19 +79,19 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Redefining the Future of Human–Robot Collaboration</h2>
+											<h2 data-i18n="intro.title">מגדירים מחדש את עתיד שיתוף הפעולה בין אדם לרובוט</h2>
 										</header>
-       									<p> <b>SYNA</b> is a robotics startup driven by a single vision: to <b>eliminate the human bottleneck in advanced manufacturing,</b> ultimately achieved by enabling technicians with basic training to perform complex tasks that once demanded years of experience.<br />
-											We develop robotic systems that combine the <b>precision and speed of automation</b> with the <b>intuition and adaptability of human touch.</b><br />
-											In industries where production demands are complex and constantly changing, such as defense, medical, and aerospace, traditional automation often falls short. These environments still depend heavily on skilled technicians to perform complicated manual work.<br />
-											SYNA bridges this gap by creating technology that makes complex assembly and testing tasks more accessible, intuitive, and scalable. </br>
-											Our mission is to empower people and industries to achieve <b>consistent precision, higher throughput, and true manufacturing flexibility.</b></p>
+       									<p data-i18n-html="intro.body"><b>SYNA</b> היא סטארטאפ רובוטיקה שמונע מחזון אחד: <b>להסיר את צוואר הבקבוק האנושי בייצור מתקדם,</b> וזאת באמצעות מתן יכולת לטכנאים עם הכשרה בסיסית לבצע משימות מורכבות שבעבר דרשו שנות ניסיון.<br />
+											אנחנו מפתחים מערכות רובוטיות שמשלבות את <b>דיוק ומהירות האוטומציה</b> עם <b>האינטואיציה והסתגלנות של המגע האנושי.</b><br />
+											בתעשיות שבהן דרישות הייצור מורכבות ומשתנות תדיר, כמו ביטחון, רפואה וחלל, אוטומציה מסורתית לרוב אינה מספיקה. סביבות אלו עדיין תלויות מאוד בטכנאים מיומנים לביצוע עבודה ידנית מסובכת.<br />
+											SYNA מגשרת על הפער באמצעות טכנולוגיה שהופכת משימות הרכבה ובדיקה מורכבות לנגישות, אינטואיטיביות וסקיילביליות. <br />
+											המשימה שלנו היא לאפשר לאנשים ולתעשיות להשיג <b>דיוק עקבי, תפוקה גבוהה יותר וגמישות ייצור אמיתית.</b></p>
         								<!-- <p>Ready to enhance your operations?</p>
 										<ul class="actions">
 											<li><a href="generic.html" class="button">Get Started</a></li>
 										</ul> -->
 									</div>
-									<span class="image"><img src="images/Hasmal.png" alt="" /></span>
+									<span class="image"><img src="images/robotouch.png" alt="" /></span>
 								</div>
 							</section>
 
@@ -93,13 +101,13 @@
 									<span class="image"><img src="images/busyWorkers.png" alt="" /></span>
 									<div class="content">
 										<header class="major">
-											<h2>The Human Bottleneck in High-Precision Manufacturing</h2>
+											<h2 data-i18n="first.title">צוואר הבקבוק האנושי בייצור עתיר-דיוק</h2>
 										</header>
-										<p> Advanced manufacturing industries, such as the defense and medical sectors, require exceptionally complex production processes involving precise assembly and delicate soldering.<br />
-											However, production volumes are often too low to justify full automation, as each product model is typically manufactured in limited quantities.<br />
-											The combination of high precision requirements and low production volumes means that many of these stages must still be performed manually. This creates an increasing dependence on highly skilled and experienced technicians — a workforce that is both rare and in short supply.<br />
-											As a result, the shortage of skilled labor leads to significant bottlenecks and unmet demand across the industry.<br />
-											<i>In the Israeli defense sector alone, this gap is estimated to represent tens to hundreds of millions of dollars in backlogged orders.</i></p>
+										<p data-i18n-html="first.body">תעשיות ייצור מתקדם, כגון תחומי הביטחון והרפואה, דורשות תהליכי ייצור מורכבים במיוחד הכוללים הרכבה מדויקת והלחמות עדינות.<br />
+											עם זאת, נפחי הייצור לעיתים נמוכים מכדי להצדיק אוטומציה מלאה, שכן כל דגם מוצר מיוצר לרוב בכמויות מוגבלות.<br />
+											השילוב בין דרישות דיוק גבוהות לנפחי ייצור נמוכים גורם לכך שחלק ניכר מהשלבים עדיין מבוצעים ידנית. הדבר יוצר תלות גוברת בטכנאים מיומנים ומנוסים — כוח אדם נדיר ובמחסור.<br />
+											כתוצאה מכך, המחסור בעובדים מיומנים מוביל לצווארי בקבוק משמעותיים ולביקוש שלא נענה בכל התעשייה.<br />
+											<i>במגזר הביטחוני בישראל בלבד, הפער הזה מוערך בעשרות עד מאות מיליוני דולרים של הזמנות ממתינות.</i></p>
 									</div>
 								</div>
 							</section>
@@ -140,15 +148,15 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Redefining Human–Robot Collaboration</h2>
+											<h2 data-i18n="second.title">מגדירים מחדש שיתוף פעולה אדם–רובוט</h2>
 										</header>
-       									<p> <b>SYNA</b>’s mission is to overcome the major dependency on skilled labor that limits advanced manufacturing industries — particularly those requiring precise electronic assembly and wiring — and to help them scale their production capacity by simplifying and making complex processes accessible.<br />
-											Our vision is a future where human expertise and robotic precision work in seamless harmony. SYNA’s intuitive robotic system enables technicians with basic training to perform complex assembly, wiring, and testing tasks that once demanded years of experience.<br />
-											Powered by mutual haptic feedback, creating a real, two-way sense of touch between human and machine, and enhanced by an optical module for microscopic precision, our system brings expert-level capability to every operator.<br />
-											This solution empowers any operator with the execution skills required for complicated, high-accuracy work, ensuring consistent precision and production speeds equal to or exceeding those of seasoned experts.<br />
-											The result: a <b>dramatic reduction in dependency on rare specialists, significant efficiency gains, and the elimination of production bottlenecks</b> that hold back critical assembly processes.</p>
+       									<p data-i18n-html="second.body"><b>SYNA</b> שואפת להתגבר על התלות הגדולה בעובדים מיומנים שמגבילה תעשיות ייצור מתקדם — במיוחד כאלה הדורשות הרכבה אלקטרונית מדויקת וחיווט — ולעזור להן להגדיל את קיבולת הייצור באמצעות פישוט והנגשה של תהליכים מורכבים.<br />
+											החזון שלנו הוא עתיד שבו מומחיות אנושית ודיוק רובוטי עובדים בהרמוניה מלאה. המערכת הרובוטית האינטואיטיבית של SYNA מאפשרת לטכנאים עם הכשרה בסיסית לבצע משימות הרכבה, חיווט ובדיקה מורכבות שבעבר דרשו שנות ניסיון.<br />
+											באמצעות משוב הפטי דו-כיווני היוצר תחושת מגע אמיתית בין אדם למכונה, ובשילוב מודול אופטי לדיוק מיקרוסקופי, המערכת שלנו מביאה יכולת ברמת מומחה לכל מפעיל.<br />
+											פתרון זה מעצים כל מפעיל במיומנויות ביצוע נדרשות לעבודה מורכבת ומדויקת מאוד, ומבטיח דיוק עקבי ומהירויות ייצור השוות או עולות על אלו של מומחים מנוסים.<br />
+											התוצאה: <b>צמצום דרמטי של התלות במומחים נדירים, שיפור יעילות משמעותי והסרת צווארי בקבוק בייצור</b> שמגבילים תהליכי הרכבה קריטיים.</p>
 									</div>
-									<span class="image"><img src="images/HoldingRobot.png" alt="" /></span>
+									<span class="image"><img src="images/debrassing.png" alt="" /></span>
 								</div>
 							</section>
 
@@ -192,15 +200,15 @@
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>About Us</h2>
-									<p>SYNA was founded by <strong>Tzahi Abu</strong>, an experienced Algorithms and Control Systems Engineer with extensive experience in the defense industry.<br />
-										Tzahi holds an M.Sc. in Autonomous Systems and Robotics from the Technion – Israel Institute of Technology, where he specialized in advanced control systems and deep learning for robotics.</p>
-									<p>Based in Israel, SYNA partners with leading industrial and defense organizations to validate and scale its technology, bringing the next generation of human-robot collaboration to global manufacturing.</p>
+									<h2 data-i18n="cta.title">עלינו</h2>
+									<p data-i18n-html="cta.p1">SYNA נוסדה על ידי <strong>צחי אבו</strong>, מהנדס אלגוריתמים ומערכות בקרה עם ניסיון רב בתעשייה הביטחונית.<br />
+										Tzahi מחזיק בתואר מוסמך (M.Sc.) במערכות אוטונומיות ורובוטיקה מהטכניון – מכון טכנולוגי לישראל, שם התמחה במערכות בקרה מתקדמות ולמידה עמוקה לרובוטיקה.</p>
+									<p data-i18n-html="cta.p2">SYNA פועלת מישראל ומשתפת פעולה עם ארגונים תעשייתיים וביטחוניים מובילים כדי לאמת ולהרחיב את הטכנולוגיה שלה, ולהביא את הדור הבא של שיתוף פעולה אדם–רובוט לייצור העולמי.</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="mailto:abutz989@gmail.com?subject=Let’s Talk – SYNA Collaboration" class="button primary">Let’s Talk</a></li>
-										<li><a href="https://calendar.app.google/gcAZ1iEu1epSHZxN8"  target="_blank" class="button">Let's Meet</a></li>
+										<li><a href="mailto:abutz989@gmail.com?subject=Let’s Talk – SYNA Collaboration" class="button primary" data-i18n="cta.letsTalk">בואו נדבר</a></li>
+										<li><a href="https://calendar.app.google/gcAZ1iEu1epSHZxN8"  target="_blank" class="button" data-i18n="cta.letsMeet">בואו נקבע פגישה</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -210,16 +218,16 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Get in Touch</h2>
-							<p>SYNA is growing — and we’re looking for partners who share our vision of making industrial robotics more intuitive, flexible, and human-driven.<br />
-							   Whether you’re an <strong>investor</strong> seeking to be part of the next wave of human–robot collaboration, an <strong>industry expert or advisor</strong> who can help us scale, a <strong>talented engineer</strong> eager to join our journey, or an <strong>early customer</strong> interested in piloting our technology — we’d love to connect.<br />
-							   Reach out to us to explore collaboration opportunities, investment discussions, or joining our growing team.</p>
+							<h2 data-i18n="footer.getInTouchTitle">דברו איתנו</h2>
+							<p data-i18n-html="footer.getInTouchBody">SYNA צומחת — ואנחנו מחפשים שותפים שחולקים את החזון שלנו להפוך רובוטיקה תעשייתית לאינטואיטיבית, גמישה ומונעת-אדם.<br />
+							   בין אם אתם <strong>משקיעים</strong> שמחפשים להיות חלק מהגל הבא של שיתוף פעולה אדם–רובוט, <strong>מומחים או יועצים תעשייתיים</strong> שיכולים לעזור לנו להתרחב, <strong>מהנדסים מוכשרים</strong> שרוצים להצטרף למסע שלנו, או <strong>לקוחות מוקדמים</strong> המעוניינים בפיילוט לטכנולוגיה — נשמח להתחבר.<br />
+							   פנו אלינו כדי לבחון שיתופי פעולה, דיונים להשקעה, או הצטרפות לצוות שלנו.</p>
 							<ul class="actions">
-								<li><a href="mailto:abutz989@gmail.com?subject=Let’s Talk – SYNA Collaboration" class="button primary">Let’s Talk</a></li>
+								<li><a href="mailto:abutz989@gmail.com?subject=Let’s Talk – SYNA Collaboration" class="button primary" data-i18n="footer.letsTalk">בואו נדבר</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Founder Contact</h2>
+							<h2 data-i18n="footer.founderContact">פרטי קשר למייסד</h2>
 							<dl class="alt">
 								<dt>Location</dt>
 								<dd> Yokneam &bull; Israel</dd>
@@ -238,6 +246,17 @@
 								<li><a href="#" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 							</ul> -->
 						</section>
+						<section class="lang-switch">
+							<h2>Language</h2>
+							<ul class="actions">
+								<li>
+									<button type="button" class="lang-btn is-active" data-lang="he" aria-pressed="true">עברית</button>
+								</li>
+								<li>
+									<button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+								</li>
+							</ul>
+						</section>
 						<p class="copyright">&copy; Issac Abu. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
@@ -254,6 +273,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/i18n.js"></script>
 
 	</body>
 

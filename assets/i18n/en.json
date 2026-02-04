@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "whoWeAre": "Who We Are",
+    "industryChallenges": "Industry Challenges",
+    "ourMission": "Our Mission",
+    "aboutUs": "About Us"
+  },
+  "header": {
+    "tagline": "<b>Remove the Human Bottleneck. Unlock True Manufacturing Flexibility.</b>",
+    "sub": "<b>SYNA</b> merges human intuition with robotic precision - redefining how people and machines work together to build the world’s most complex technologies."
+  },
+  "intro": {
+    "title": "Redefining the Future of Human–Robot Collaboration",
+    "body": "<b>SYNA</b> is a robotics startup driven by a single vision: to <b>eliminate the human bottleneck in advanced manufacturing,</b> ultimately achieved by enabling technicians with basic training to perform complex tasks that once demanded years of experience.<br />We develop robotic systems that combine the <b>precision and speed of automation</b> with the <b>intuition and adaptability of human touch.</b><br />In industries where production demands are complex and constantly changing, such as defense, medical, and aerospace, traditional automation often falls short. These environments still depend heavily on skilled technicians to perform complicated manual work.<br />SYNA bridges this gap by creating technology that makes complex assembly and testing tasks more accessible, intuitive, and scalable.<br />Our mission is to empower people and industries to achieve <b>consistent precision, higher throughput, and true manufacturing flexibility.</b>"
+  },
+  "first": {
+    "title": "The Human Bottleneck in High-Precision Manufacturing",
+    "body": "Advanced manufacturing industries, such as the defense and medical sectors, require exceptionally complex production processes involving precise assembly and delicate soldering.<br />However, production volumes are often too low to justify full automation, as each product model is typically manufactured in limited quantities.<br />The combination of high precision requirements and low production volumes means that many of these stages must still be performed manually. This creates an increasing dependence on highly skilled and experienced technicians — a workforce that is both rare and in short supply.<br />As a result, the shortage of skilled labor leads to significant bottlenecks and unmet demand across the industry.<br /><i>In the Israeli defense sector alone, this gap is estimated to represent tens to hundreds of millions of dollars in backlogged orders.</i>"
+  },
+  "second": {
+    "title": "Redefining Human–Robot Collaboration",
+    "body": "<b>SYNA</b>’s mission is to overcome the major dependency on skilled labor that limits advanced manufacturing industries — particularly those requiring precise electronic assembly and wiring — and to help them scale their production capacity by simplifying and making complex processes accessible.<br />Our vision is a future where human expertise and robotic precision work in seamless harmony. SYNA’s intuitive robotic system enables technicians with basic training to perform complex assembly, wiring, and testing tasks that once demanded years of experience.<br />Powered by mutual haptic feedback, creating a real, two-way sense of touch between human and machine, and enhanced by an optical module for microscopic precision, our system brings expert-level capability to every operator.<br />This solution empowers any operator with the execution skills required for complicated, high-accuracy work, ensuring consistent precision and production speeds equal to or exceeding those of seasoned experts.<br />The result: a <b>dramatic reduction in dependency on rare specialists, significant efficiency gains, and the elimination of production bottlenecks</b> that hold back critical assembly processes."
+  },
+  "cta": {
+    "title": "About Us",
+    "p1": "SYNA was founded by <strong>Tzahi Abu</strong>, an experienced Algorithms and Control Systems Engineer with extensive experience in the defense industry.<br />Tzahi holds an M.Sc. in Autonomous Systems and Robotics from the Technion – Israel Institute of Technology, where he specialized in advanced control systems and deep learning for robotics.",
+    "p2": "Based in Israel, SYNA partners with leading industrial and defense organizations to validate and scale its technology, bringing the next generation of human-robot collaboration to global manufacturing.",
+    "letsTalk": "Let’s Talk",
+    "letsMeet": "Let's Meet"
+  },
+  "footer": {
+    "getInTouchTitle": "Get in Touch",
+    "getInTouchBody": "SYNA is growing — and we’re looking for partners who share our vision of making industrial robotics more intuitive, flexible, and human-driven.<br />Whether you’re an <strong>investor</strong> seeking to be part of the next wave of human–robot collaboration, an <strong>industry expert or advisor</strong> who can help us scale, a <strong>talented engineer</strong> eager to join our journey, or an <strong>early customer</strong> interested in piloting our technology — we’d love to connect.<br />Reach out to us to explore collaboration opportunities, investment discussions, or joining our growing team.",
+    "letsTalk": "Let’s Talk",
+    "founderContact": "Founder Contact",
+    "language": "Language"
+  }
+}
