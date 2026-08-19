@@ -3,7 +3,82 @@
   const navToggle = document.querySelector(".nav-toggle");
   const navLinks = Array.from(document.querySelectorAll(".nav-links a[href^='#']"));
   const revealItems = document.querySelectorAll(".reveal:not(.is-visible)");
+  const hero = document.querySelector(".hero");
+  const heroHeadline = document.querySelector(".hero h1");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hasFinePointer = window.matchMedia("(any-pointer: fine)").matches;
+
+  const animateHeroHeadline = () => {
+    if (!heroHeadline) return;
+
+    const text = heroHeadline.textContent.replace(/\s+/g, " ").trim();
+    heroHeadline.setAttribute("aria-label", text);
+
+    if (prefersReducedMotion) return;
+
+    const words = text.split(" ");
+    const fragment = document.createDocumentFragment();
+
+    words.forEach((word, index) => {
+      const span = document.createElement("span");
+      span.className = "hero-word";
+      span.setAttribute("aria-hidden", "true");
+      span.style.setProperty("--word-index", index);
+      span.textContent = index < words.length - 1 ? `${word} ` : word;
+      fragment.appendChild(span);
+    });
+
+    heroHeadline.classList.remove("is-animated");
+    heroHeadline.replaceChildren(fragment);
+    heroHeadline.classList.add("motion-ready");
+    void heroHeadline.offsetWidth;
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => heroHeadline.classList.add("is-animated"));
+    });
+  };
+
+  const trackPointer = (element, activeClass, xProperty, yProperty) => {
+    let animationFrame = 0;
+    let latestEvent;
+
+    element.addEventListener("pointermove", (event) => {
+      latestEvent = event;
+      if (animationFrame) return;
+
+      animationFrame = requestAnimationFrame(() => {
+        const bounds = element.getBoundingClientRect();
+        const x = ((latestEvent.clientX - bounds.left) / bounds.width) * 100;
+        const y = ((latestEvent.clientY - bounds.top) / bounds.height) * 100;
+
+        element.style.setProperty(xProperty, `${x.toFixed(2)}%`);
+        element.style.setProperty(yProperty, `${y.toFixed(2)}%`);
+        element.classList.add(activeClass);
+        animationFrame = 0;
+      });
+    });
+
+    element.addEventListener("pointerleave", () => {
+      element.classList.remove(activeClass);
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+      animationFrame = 0;
+    });
+  };
+
+  animateHeroHeadline();
+  document.addEventListener("syna:languagechange", animateHeroHeadline);
+
+  revealItems.forEach((item, index) => {
+    item.style.setProperty("--reveal-delay", `${(index % 2) * 90}ms`);
+  });
+
+  if (!prefersReducedMotion && hasFinePointer) {
+    if (hero) trackPointer(hero, "is-pointer-active", "--pointer-x", "--pointer-y");
+
+    document.querySelectorAll(".hero-media, .section-media, .contact-details").forEach((surface) => {
+      trackPointer(surface, "is-spotlit", "--spotlight-x", "--spotlight-y");
+    });
+  }
 
   const closeMenu = () => {
     document.body.classList.remove("nav-open");

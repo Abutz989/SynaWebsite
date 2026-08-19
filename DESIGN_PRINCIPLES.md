@@ -63,10 +63,17 @@ Accent colors identify interaction and structure. They do not become decorative 
 
 ## Interaction and motion
 
-- Use restrained entrance transitions for major blocks only.
+- Use restrained entrance transitions for major blocks and a short word-stagger for the hero statement.
 - Keep smooth anchor navigation, but respect `prefers-reduced-motion`.
-- Use no autoplay video, cursor effects, parallax, or motion that competes with the technical story.
+- Use no autoplay video, replacement cursor, heavy parallax, or motion that competes with the technical story.
+- Keep pointer-reactive light confined to imagery and contact surfaces so it never obscures text or changes layout.
 - Navigation, language switching, email, meeting, and LinkedIn actions must remain keyboard accessible.
+
+### Motion references
+
+- The hero word reveal and surface spotlights adapt interaction ideas from [React Bits](https://reactbits.dev/) Split Text, Animated Content, and Spotlight Card patterns.
+- The button sheen and slow technical-grid drift adapt the lightweight CSS micro-interaction approach found in [Uiverse](https://uiverse.io/)'s open-source button and pattern library.
+- All motion is reimplemented in plain CSS and JavaScript for this site; no external animation dependency is introduced.
 
 ## Bilingual behavior
 
