@@ -2,22 +2,23 @@
 
 Updated: 7 September 2026
 
-## Concept: human skill, made tangible
+## Concept: the automation gap
 
-The website introduces a developing industrial system through the relationship between an operator, a robotic tool, and touch feedback. Its primary audience is a manufacturing partner evaluating precision finishing and deburring; technical experts and early backers are secondary audiences. The primary action is a conversation about a real application.
+The website is a startup one-pager built around a business problem: advanced manufacturers need more production capacity, but many precise, variable processes remain difficult to automate and dependent on scarce skilled labor. Its primary audience is an industrial leader or validation partner; early-stage investors and technical experts are secondary audiences. The primary action is a conversation about an actual manufacturing constraint.
 
-The visual language combines a wide view of the operator and workcell with restrained editorial typography. Deep navy relates to the concept imagery, cyan identifies interaction, and pale sections give the system explanation and founder background a distinct reading surface. Fine rules organize content. There are no decorative orbits, pointer lights, blurred text reveals, or invented performance figures.
+The opening uses typography and three pressure points—precision, variation, and limited skilled capacity—to establish the need before any product image appears. The full-system image is reserved for the solution section. Deep navy carries the problem, solution, and vision; pale sections separate evidence and market context. Cyan marks the narrative path rather than product features. Fine rules organize content. There are no decorative effects or invented performance and market figures.
 
 ## Narrative and copy
 
-1. **Opening:** “Human skill. Robotic reach. A sense of touch.” A short explanation, first application, direct email action, and full-system concept image.
-2. **The system:** Three steps explain motion input, robotic execution, and force/moment feedback. A close view of the existing haptic-interface concept supports the explanation.
-3. **The application:** Explain why variation, controlled contact, and sustained physical effort make finishing difficult to automate.
-4. **Development:** Describe stability and adaptability as design objectives. Keep future data-assisted capabilities separate from the first system and state the concept/technical-development stage explicitly.
-5. **Company:** The supplied founder background and education, without invented team members, customers, or credentials.
-6. **Contact:** Repeat the application conversation action, offer the existing meeting link, and expose email, telephone, and location.
+1. **Opening need:** Advanced manufacturing still depends on scarce skilled hands. Three supporting pressures make the problem scannable in the first viewport.
+2. **Problem:** Explain the conflict between variable manual work and rigid automation, using finishing and deburring as the concrete entry problem.
+3. **High-level solution:** Keep the operator’s judgment while moving the physical work to a robotic system. Describe value before mentioning the haptic interface in one supporting note.
+4. **Market opportunity:** Present aerospace, defense, and medical manufacturing as examples of the same high-mix, low-volume environment. Distinguish the focused entry application from a broader future path without publishing unsupported market-size figures.
+5. **Vision:** Show a staged path from human-guided execution to intelligent assistance and gradual automation. Label roadmap stages clearly.
+6. **Company:** Present the supplied founder background, current development stage, and partner need without implying customers, pilots, or commercial validation.
+7. **Contact:** Ask whether skilled work is limiting capacity, then offer the existing email, meeting, telephone, and location routes.
 
-Keep paragraphs short and concrete. Explain “bilateral haptic” as a two-way relationship. Do not turn proposed benefits into measured results or renderings into evidence of an operating prototype. The copyright line identifies SYNA; the displayed HTML5 UP credit and unused demo HTML pages have been removed. Historical license files remain intact.
+Keep paragraphs short and concrete. Lead with the manufacturing problem and business consequence. Explain the product at the level needed to understand the approach; introduce the haptic interface only after the value is clear. Do not turn intended outcomes into measured results, market categories into market-size claims, or renderings into evidence of an operating prototype. The copyright line identifies SYNA; the displayed HTML5 UP credit and unused demo HTML pages remain removed. Historical license files remain intact.
 
 ## Visual system
 
@@ -42,14 +43,13 @@ Headlines scale fluidly and use deliberate phrase breaks. Text and buttons remai
 
 ## Asset policy and provenance
 
-Two existing concept images are integrated, with no new generated hardware:
+One existing concept image is integrated into the solution section, with no new generated hardware:
 
 - `assets/images/system-1680.webp` and `system-800.webp`: responsive exports of `../Visual_Asset/assets/website/hero/SYNA_Website_Hero_Full_System_v1.png`, the approved-for-now website baseline identified in the existing production notes.
-- `assets/images/haptic-interface.webp`: export of `../Visual_Asset/assets/anchors/master_arm/SYNA_Master_Arm_Ergonomic.png`.
 - `assets/images/logo-light.png`: tightly bounded, resized export of the supplied `LOGO_LIGHT.png`.
 - `assets/images/favicon.png`: small export of the supplied `LOGO_SIMBOL.png`.
 
-Retain original artwork in its source location. These are compressed delivery derivatives; they do not change the mechanical design. The full-system image keeps its original ratio, complete workcell-left/operator-right composition, and physical orientation in both languages. Never mirror product imagery for RTL. Both content images have translated descriptions and explicit concept captions. The hero loads eagerly with a responsive source set; the second image loads lazily. The large system export is approximately 104KB; the haptic-interface export is approximately 24KB.
+Retain original artwork in its source location. These are compressed delivery derivatives; they do not change the mechanical design. The full-system image keeps its original ratio, complete workcell-left/operator-right composition, and physical orientation in both languages. Never mirror product imagery for RTL. The image has translated descriptions and explicit concept captions and loads lazily with a responsive source set. The large system export is approximately 104KB. The retained haptic-interface export is currently unused and may support a future technical page.
 
 ## Bilingual working process
 

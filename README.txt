@@ -6,6 +6,9 @@ Static, bilingual website for SYNA's human-guided robotics concept.
 Preview from this directory:
   python3 -m http.server 8080 --bind 127.0.0.1
 
+Preview the no-JavaScript fallback on port 8081:
+  python3 scripts/qa-server.py
+
 Content workflow:
   1. Finalize assets/i18n/en.js.
   2. Translate the final English into assets/i18n/he.js.

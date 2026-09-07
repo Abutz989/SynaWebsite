@@ -2,7 +2,7 @@
 
 ## Scope and result
 
-The redesigned homepage was served locally and tested in the Codex in-app browser. English copy was finalized first, followed by Hebrew translation. The existing changes were committed before design work in `26ddafd`.
+The problem-first homepage was served locally and tested in the Codex in-app browser. English copy was finalized first, followed by Hebrew translation. It follows the supplied messaging architecture: need and automation problem, high-level solution, market opportunity, company vision, company, and contact.
 
 The local checks below passed. No production deployment, email, telephone call, or appointment booking was performed.
 
@@ -10,14 +10,15 @@ The local checks below passed. No production deployment, email, telephone call, 
 
 | Check | Result |
 | --- | --- |
+| Narrative order | First viewport establishes the manufacturing need; problem precedes solution; market opportunity and vision are separate sections; technical explanation is confined to one supporting note. |
 | English and Hebrew layout at 320px, 768px, and 1440px viewport widths | No horizontal overflow; headings and body content remain within the viewport. Additional 390px Hebrew/mobile-menu and approximately 1000px desktop reviews completed. |
-| English section navigation | System, application, development, company, and contact links reached their corresponding anchors. |
-| Hebrew mobile navigation | Menu expands; selecting the application/contact link closes the menu and navigates. |
+| English section navigation | Problem, approach, opportunity, vision, company, and contact links reached their corresponding anchors. |
+| Hebrew mobile navigation | Menu expands; selecting the opportunity/contact link closes the menu and navigates. |
 | Escape and focus | Escape closes the mobile menu and restores focus to its button. |
 | Keyboard skip link | Enter on the skip link moves focus to `main`. |
 | Language controls | Header and footer switches update content, title, language, direction, and selected state. Both EN and HE preferences survive reload. |
 | RTL | Text and layout follow RTL; phone/email remain LTR; physical product imagery is not mirrored. |
-| Content and imagery | All bound content populated; all four image instances loaded; descriptive alternatives and concept captions present in both languages. |
+| Content and imagery | All bound content populated; logo and solution image instances loaded; the solution image has descriptive alternatives and concept captions in both languages. |
 | Text contrast | Computed foreground/background checks found no failures at the 4.5:1 normal-text / 3:1 large-text thresholds. This is a targeted check, not a full accessibility certification. |
 | No JavaScript | Tested with scripts blocked by a temporary local server response policy. Complete English copy and navigation remain usable; language buttons are hidden; navigation remains in normal flow. |
 | Calendar | Existing short link returned HTTP 200, resolved to Tzahi Abu’s appointment schedule, and displayed available 45-minute appointment slots in the browser. No slot was booked. |
@@ -29,7 +30,7 @@ The local checks below passed. No production deployment, email, telephone call, 
 
 `node scripts/check-site.mjs` verifies:
 
-- 84 identical English/Hebrew translation keys, with no empty strings.
+- 110 identical English/Hebrew translation keys, with no empty strings.
 - Every translation binding resolves.
 - Complete English fallback text, including native link destinations.
 - One H1, unique element IDs, and valid local anchor targets.
@@ -45,6 +46,7 @@ The local checks below passed. No production deployment, email, telephone call, 
 1. Browser caching initially mixed the previous Hebrew dictionary with the new markup. The content renderer now gives active CSS and scripts content-based query versions.
 2. The always-expanded no-JavaScript mobile navigation could cover content if sticky. It now stays in normal document flow.
 3. Old template demo routes still displayed template branding. The unused `generic.html` and `elements.html` pages were removed; historical license records were preserved.
+4. The prior redesign led with haptic technology. The revised one-pager now follows the approved message discipline: problem and business need, high-level solution, opportunity, vision, company, and contact.
 
 ## Boundaries
 
