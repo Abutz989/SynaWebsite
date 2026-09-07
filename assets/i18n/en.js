@@ -1,0 +1,121 @@
+// English is the source of truth. Finalize this copy before updating he.js.
+window.SYNA_TRANSLATIONS = window.SYNA_TRANSLATIONS || {};
+window.SYNA_TRANSLATIONS.en = Object.freeze({
+  meta: {
+    title: "SYNA | Human-Guided Robotics",
+    description: "SYNA is building a haptic robotic system for contact-rich industrial work, starting with precision finishing and deburring."
+  },
+  brand: { name: "SYNA", descriptor: "Human-guided robotics" },
+  language: { heShort: "עברית", enShort: "EN" },
+  a11y: { skip: "Skip to main content", primaryNav: "Primary navigation", home: "SYNA — back to top", problemSignals: "Possible applications for human-guided robotics" },
+  nav: { menu: "Menu", problem: "The challenge", solution: "How it works", market: "Applications", vision: "Path forward", company: "Company", contact: "Let’s talk" },
+  header: {
+    eyebrow: "Human-guided robotics",
+    tagline: "Scale Skilled Manufacturing with <span class=\"accent\">Human-Guided Robotics.</span>",
+    sub: "SYNA is building a haptic robotic system that helps skilled operators perform contact-rich industrial tasks with greater consistency, endurance, and flexibility — starting with precision finishing and deburring.",
+    primary: "See how it works",
+    secondary: "Explore possible applications",
+    fact1: "Precision finishing",
+    fact1Body: "Direct control for contact-rich finishing and deburring.",
+    fact2: "Precision handling",
+    fact2Body: "A possible path for variable handling and assembly.",
+    fact3: "Human in control",
+    fact3Body: "The operator makes process decisions while the robot performs the physical task."
+  },
+  problem: {
+    label: "01 / The challenge",
+    title: "Why Precision Work<br>Resists Automation",
+    lead: "Precision finishing and deburring require continuous judgment, controlled physical contact, and adaptation to small differences between parts.",
+    body: "In high-mix, low-volume production, conventional automation can be too rigid or too costly to re-engineer for every variation. Manual work remains adaptable, but its capacity and consistency can be constrained by fatigue and the availability of experienced technicians.",
+    item1Title: "Too variable for fixed automation",
+    item1Body: "Rigid paths work best when products and conditions repeat. Precision work often does not.",
+    item2Title: "Too complex to simplify",
+    item2Body: "Quality depends on how the tool meets the part, not only where it moves.",
+    item3Title: "Too important to leave unscaled",
+    item3Body: "When skilled capacity is limited, critical production cannot expand with demand.",
+    conclusion: "The challenge is to scale skilled execution without removing the human judgment that makes it effective."
+  },
+  solution: {
+    label: "02 / How it works",
+    title: "A Robot Guided<br>by Human Touch",
+    lead: "SYNA is building a bilateral haptic system that maps an operator’s motion to a robotic executor and returns contact forces and moments to the operator in real time.",
+    body: "The human remains in control and responds to process variation, while the robot performs the physical task.",
+    value1: "Human adaptability",
+    value1Body: "The operator remains responsible for process decisions.",
+    value2: "Robotic consistency",
+    value2Body: "The system is designed to support stable execution over longer periods.",
+    value3: "A more flexible path to automation",
+    value3Body: "Human guidance aims to make changing work easier to accommodate.",
+    caption: "Possible function 01",
+    captionDetail: "Precision finishing and deburring",
+    imageAlt: "Concept visualization of an operator guiding a robotic tool during precision finishing.",
+    howTitle: "Human judgment stays in the loop",
+    howBody: "The first system is designed to support more stable and consistent execution over longer periods, reduce the physical burden of precision work, and adapt between variable tasks without the programming effort required by rigid automation."
+  },
+  market: {
+    label: "03 / Possible applications",
+    title: "One human-guided platform. Two possible starting points.",
+    lead: "Both applications depend on operator judgment, direct physical control, and the ability to respond when parts or contact conditions change.",
+    industriesTitle: "Shared operating principle",
+    industry1: "The operator decides",
+    industry2: "The robot executes",
+    industry3: "Contact is felt in real time",
+    entryTag: "Function 01",
+    entryTitle: "Precision finishing and deburring",
+    entryBody: "A contact-rich process where force, tool angle, and small differences between parts demand continuous operator judgment.",
+    expansionTag: "Function 02",
+    expansionTitle: "Precision handling and assembly",
+    expansionBody: "A possible extension for variable pick, place, insertion, and connector tasks that benefit from direct human guidance.",
+    note: "These are possible application directions, not validated product claims. SYNA is currently at the concept and technical-development stage."
+  },
+  vision: {
+    label: "04 / Path forward",
+    title: "From direct control to gradual automation.",
+    lead: "Synchronized motion, force, visual, and process data could create a practical path from human-guided work to intelligent assistance.",
+    now: "Now",
+    phase1: "Human-guided execution",
+    phase1Body: "Start with the operator in control and the robot performing the physical task.",
+    next: "Next",
+    phase2: "Intelligent assistance",
+    phase2Body: "Use motion, force, visual, and process data to develop guardrails and preserve expert knowledge.",
+    later: "Later",
+    phase3: "Gradual automation",
+    phase3Body: "Automate selected parts of validated processes while keeping people responsible where judgment is needed.",
+    principle: "The goal is not to remove human expertise. It is to make that expertise more productive, sustainable, and transferable."
+  },
+  company: {
+    label: "05 / Company",
+    title: "Built on Robotics and Control Expertise",
+    founder: "Tzahi Abu",
+    role: "Founder · Algorithms & Control Systems Engineer",
+    p1: "Tzahi brings experience from the defense industry, with expertise in advanced control systems, robotics, and deep learning.",
+    p2: "He holds an M.Sc. in Autonomous Systems and Robotics and a B.Sc. in Mechanical Engineering from the Technion – Israel Institute of Technology.",
+    stageTitle: "What we are building now",
+    stageBody: "SYNA is currently at the concept and technical-development stage. We are looking for industrial partners and early backers to validate the first application and help bring the first system into production.",
+    linkedin: "Connect on LinkedIn"
+  },
+  footer: {
+    label: "Build with us",
+    getInTouchTitle: "Help Shape the<br>First Application",
+    getInTouchBody: "If precision finishing is limiting your production capacity — or you want to help build the next generation of human-guided robotics — let’s talk.",
+    partners: "We welcome conversations with manufacturers, technical experts, and early-stage investors who can help validate the problem, refine the system, and move toward an industrial pilot.",
+    letsTalk: "Start a Conversation",
+    letsMeet: "Schedule a meeting",
+    founderContact: "Contact the founder",
+    location: "Based in",
+    phone: "Phone",
+    email: "Email",
+    language: "Language",
+    copyright: "© SYNA. All rights reserved."
+  },
+  contact: {
+    location: "Yokneam, Israel",
+    phone: "+972 54-6812404",
+    phoneHref: "tel:+972546812404",
+    email: "abutz989@gmail.com",
+    emailHref: "mailto:abutz989@gmail.com",
+    mailtoHref: "mailto:abutz989@gmail.com?subject=Let%E2%80%99s%20Talk%20%E2%80%93%20SYNA%20Collaboration",
+    meetingHref: "https://calendar.app.google/gcAZ1iEu1epSHZxN8",
+    linkedinHref: "https://www.linkedin.com/in/abutz989/"
+  }
+});

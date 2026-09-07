@@ -1,5 +1,28 @@
-{
+// Edit the Hebrew website text in this file.
+window.SYNA_TRANSLATIONS = window.SYNA_TRANSLATIONS || {};
+window.SYNA_TRANSLATIONS.he = Object.freeze({
+  "meta": {
+    "title": "SYNA"
+  },
+  "brand": {
+    "name": "SYNA"
+  },
+  "language": {
+    "heShort": "עב",
+    "enShort": "EN"
+  },
+  "sections": {
+    "first": "01",
+    "second": "02",
+    "third": "03",
+    "last": "04"
+  },
+  "a11y": {
+    "skip": "דלגו לתוכן המרכזי",
+    "primaryNav": "ניווט ראשי"
+  },
   "nav": {
+    "menu": "תפריט",
     "whoWeAre": "מי אנחנו",
     "industryChallenges": "האתגר בתעשייה",
     "ourMission": "החזון שלנו",
@@ -33,6 +56,23 @@
     "getInTouchBody": "SYNA נמצאת בתנופת צמיחה — ואנחנו מחפשים שותפים שחולקים את החזון שלנו להפוך את הרובוטיקה התעשייתית לאינטואיטיבית, גמישה ומונעת-אדם.<br />בין אם אתם <strong>משקיעים</strong> המעוניינים להוביל את המהפכה הבאה בתחום ה-HRC, <strong>מומחים ויועצים</strong> שיכולים לסייע לנו בצמיחה, <strong>מהנדסים מוכשרים</strong> שרוצים להצטרף למסע, או <strong>לקוחות ושותפי פיתוח (Design Partners)</strong> המעוניינים בפיילוט — נשמח לשמוע מכם.<br />פנו אלינו כדי לבחון הזדמנויות לשיתוף פעולה, השקעה, או הצטרפות לצוות.",
     "letsTalk": "בואו נדבר",
     "founderContact": "קשר ישיר למייסד",
-    "language": "שפה"
+    "location": "מיקום",
+    "phone": "טלפון",
+    "email": "אימייל",
+    "language": "שפה",
+    "linkedin": "LinkedIn",
+    "copyright": "&copy; Issac Abu. עיצוב: <a href=\"https://html5up.net\" target=\"_blank\" rel=\"noopener noreferrer\">HTML5 UP</a>."
+  },
+  "contact": {
+    "location": "יקנעם · ישראל",
+    "phone": "+972 54-6812404",
+    "phoneHref": "tel:+972546812404",
+    "email": "abutz989@gmail.com",
+    "emailHref": "mailto:abutz989@gmail.com",
+    "mailtoHref": "mailto:abutz989@gmail.com?subject=Let%E2%80%99s%20Talk%20%E2%80%93%20SYNA%20Collaboration",
+    "meetingHref": "https://calendar.app.google/gcAZ1iEu1epSHZxN8",
+    "linkedinName": "צחי אבו",
+    "linkedinHref": "https://www.linkedin.com/in/abutz989/"
   }
 }
+);

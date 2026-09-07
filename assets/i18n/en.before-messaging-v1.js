@@ -1,5 +1,28 @@
-{
+// Edit the English website text in this file.
+window.SYNA_TRANSLATIONS = window.SYNA_TRANSLATIONS || {};
+window.SYNA_TRANSLATIONS.en = Object.freeze({
+  "meta": {
+    "title": "SYNA"
+  },
+  "brand": {
+    "name": "SYNA"
+  },
+  "language": {
+    "heShort": "עב",
+    "enShort": "EN"
+  },
+  "sections": {
+    "first": "01",
+    "second": "02",
+    "third": "03",
+    "last": "04"
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "primaryNav": "Primary navigation"
+  },
   "nav": {
+    "menu": "Menu",
     "whoWeAre": "Who We Are",
     "industryChallenges": "Industry Challenges",
     "ourMission": "Our Mission",
@@ -33,6 +56,23 @@
     "getInTouchBody": "SYNA is growing — and we’re looking for partners who share our vision of making industrial robotics more intuitive, flexible, and human-driven.<br />Whether you’re an <strong>investor</strong> seeking to be part of the next wave of human–robot collaboration, an <strong>industry expert or advisor</strong> who can help us scale, a <strong>talented engineer</strong> eager to join our journey, or an <strong>early customer</strong> interested in piloting our technology — we’d love to connect.<br />Reach out to us to explore collaboration opportunities, investment discussions, or joining our growing team.",
     "letsTalk": "Let’s Talk",
     "founderContact": "Founder Contact",
-    "language": "Language"
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "language": "Language",
+    "linkedin": "LinkedIn",
+    "copyright": "&copy; Issac Abu. Design: <a href=\"https://html5up.net\" target=\"_blank\" rel=\"noopener noreferrer\">HTML5 UP</a>."
+  },
+  "contact": {
+    "location": "Yokneam · Israel",
+    "phone": "+972 54-6812404",
+    "phoneHref": "tel:+972546812404",
+    "email": "abutz989@gmail.com",
+    "emailHref": "mailto:abutz989@gmail.com",
+    "mailtoHref": "mailto:abutz989@gmail.com?subject=Let%E2%80%99s%20Talk%20%E2%80%93%20SYNA%20Collaboration",
+    "meetingHref": "https://calendar.app.google/gcAZ1iEu1epSHZxN8",
+    "linkedinName": "Tzahi Abu",
+    "linkedinHref": "https://www.linkedin.com/in/abutz989/"
   }
 }
+);

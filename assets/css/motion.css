@@ -1,0 +1,6 @@
+/* Motion supports interactions; content never depends on animation to appear. */
+@media (prefers-reduced-motion: no-preference) {
+  .button, .text-link, .nav-links a, .lang-btn { transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease; }
+  .hero-heading { animation: enter 450ms ease-out both; }
+  @keyframes enter { from { transform: translateY(10px); } to { transform: translateY(0); } }
+}
