@@ -1,7 +1,6 @@
 (() => {
   const defaultLang = "en";
   const supported = new Set(["he", "en"]);
-  const cache = {};
   const embedded = window.SYNA_TRANSLATIONS || {};
   let requestId = 0;
 
@@ -63,18 +62,8 @@
   };
 
   const loadTranslations = async (lang) => {
-    if (cache[lang]) return cache[lang];
-
-    if (embedded[lang]) {
-      cache[lang] = embedded[lang];
-      return cache[lang];
-    }
-
-    const response = await fetch(`assets/i18n/${lang}.json`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`Failed to load translations for ${lang}`);
-
-    cache[lang] = await response.json();
-    return cache[lang];
+    if (!embedded[lang]) throw new Error(`Missing content file for ${lang}`);
+    return embedded[lang];
   };
 
   const setLanguage = async (lang) => {
