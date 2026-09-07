@@ -52,9 +52,9 @@ p + p { margin-top: 1rem; }
 
 .eyebrow { display: flex; align-items: center; gap: .75rem; font-size: .875rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 700; color: var(--cyan); }
 .signal { display: inline-block; width: 7px; height: 7px; background: var(--cyan); flex-shrink: 0; border-radius: 50%; }
-.problem-hero { min-height: calc(100svh - 5.5rem); display: flex; align-items: center; padding-block: 5rem; background: linear-gradient(115deg, rgba(121,217,232,.035), transparent 46%); }
-.problem-hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(19rem, .7fr); gap: clamp(4rem, 8vw, 8rem); align-items: end; margin-top: 2.25rem; }
-.hero-copy h1 { max-width: 55rem; }
+.problem-hero { min-height: calc(100svh - 5.5rem); display: flex; align-items: center; padding-block: 4.5rem; background: linear-gradient(115deg, rgba(121,217,232,.035), transparent 46%); }
+.problem-hero-grid { display: grid; grid-template-columns: minmax(24rem, .82fr) minmax(32rem, 1.18fr); gap: clamp(3rem, 6vw, 6rem); align-items: center; margin-top: 2.25rem; }
+.hero-copy h1 { max-width: 55rem; font-size: clamp(3.4rem, 5.1vw, 5.25rem); }
 .accent { color: var(--cyan); }
 .hero-sub { max-width: 45rem; margin-top: 2rem; font-size: 1.35rem; line-height: 1.52; color: #d5e0e5; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 2.25rem; }
@@ -68,11 +68,10 @@ p + p { margin-top: 1rem; }
 .text-link span:first-child { border-bottom: 1px solid currentColor; }
 .text-link:hover { color: #087184; }
 .hero .text-link:hover, .vision-section .text-link:hover { color: var(--cyan); }
-.problem-signals { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line-dark); }
-.problem-signals li { display: grid; grid-template-columns: 2rem 1fr; gap: 1.25rem; padding-block: 1.35rem; border-bottom: 1px solid var(--line-dark); }
-.problem-signals > li > span { color: var(--cyan); font-size: .8rem; font-weight: 700; padding-top: .25rem; }
-.problem-signals h2 { font-size: 1.3rem; font-weight: 700; letter-spacing: 0; }
-.problem-signals p { margin-top: .35rem; color: var(--muted-dark); font-size: 1rem; }
+.hero-visual { position: relative; margin: 0; }
+.hero-visual::before { position: absolute; z-index: -1; inset: -1.25rem 1.25rem 1.25rem -1.25rem; content: ""; border: 1px solid var(--line-dark); }
+.hero-visual img { width: 100%; border: 1px solid #40535d; border-radius: 4px; box-shadow: 0 2rem 5rem rgba(0,0,0,.28); }
+.hero-visual figcaption { border-bottom: 1px solid var(--line-dark); }
 
 .content-section { padding-block: 7rem; }
 .section-light { background: var(--paper); color: var(--text); }
@@ -162,7 +161,7 @@ html:not(.js) .lang-switch, html:not(.js) .footer-language { display: none; }
   .nav-menu { gap: .8rem; }
   .nav-links { gap: .75rem; }
   .nav-contact { display: none; }
-  .problem-hero-grid { gap: 4rem; }
+  .problem-hero-grid { grid-template-columns: minmax(21rem, .8fr) minmax(28rem, 1.2fr); gap: 3rem; }
   .contact-grid { gap: 3rem; }
 }
 
@@ -179,7 +178,8 @@ html:not(.js) .lang-switch, html:not(.js) .footer-language { display: none; }
   .nav-contact { display: flex; margin-inline-start: auto; }
   .site-nav { max-height: 100dvh; overflow-y: auto; }
   .problem-hero { min-height: auto; padding-block: 4.5rem; }
-  .problem-hero-grid { grid-template-columns: 1.2fr .8fr; gap: 3rem; }
+  .problem-hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-copy { max-width: 48rem; }
   .hero-sub { font-size: 1.2rem; }
   .content-section { padding-block: 5rem; }
   .section-heading, .market-heading, .vision-intro, .company-grid { gap: 2.5rem; }
@@ -204,7 +204,7 @@ html:not(.js) .lang-switch, html:not(.js) .footer-language { display: none; }
   .problem-hero-grid { gap: 3rem; margin-top: 1.5rem; }
   .hero-sub { font-size: 1.15rem; margin-top: 1.5rem; }
   .hero-actions { margin-top: 1.6rem; }
-  .problem-signals h2 { font-size: 1.2rem; }
+  .hero-visual::before { inset: -.75rem .75rem .75rem -.75rem; }
   .content-section { padding-block: 4rem; }
   .section-heading { gap: 1.5rem; margin-bottom: 2.5rem; }
   .section-lead, .market-heading p, .vision-intro p { font-size: 1.1rem; }
