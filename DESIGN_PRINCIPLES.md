@@ -1,98 +1,78 @@
-# SYNA Website Design Principles
+# SYNA website — design concept and working principles
 
-## Design intent
+Updated: 7 September 2026
 
-The redesign presents SYNA as a precise, credible industrial-robotics company through a focused one-page narrative. It takes inspiration from the editorial confidence and dark, high-contrast staging of Square One Labs, and from the concise hierarchy, readable content blocks, and clear next steps highlighted by Storydoc's one-pager examples. It does not copy either reference.
+## Concept: human skill, made tangible
 
-The site must feel engineered rather than decorated: every line, image, transition, and control should help the visitor understand the existing story or reach an existing contact action.
+The website introduces a developing industrial system through the relationship between an operator, a robotic tool, and touch feedback. Its primary audience is a manufacturing partner evaluating precision finishing and deburring; technical experts and early backers are secondary audiences. The primary action is a conversation about a real application.
 
-## Non-negotiable content rule
+The visual language combines a wide view of the operator and workcell with restrained editorial typography. Deep navy relates to the concept imagery, cyan identifies interaction, and pale sections give the system explanation and founder background a distinct reading surface. Fine rules organize content. There are no decorative orbits, pointer lights, blurred text reveals, or invented performance figures.
 
-- Preserve the information already present in the original site.
-- Do not introduce new capabilities, statistics, customer claims, partnerships, team members, or contact details.
-- Keep Hebrew and English versions semantically equivalent to the supplied translations.
-- Visual labels such as section numbers may organize the page, but must not imply new facts.
+## Narrative and copy
 
-## Narrative structure
+1. **Opening:** “Human skill. Robotic reach. A sense of touch.” A short explanation, first application, direct email action, and full-system concept image.
+2. **The system:** Three steps explain motion input, robotic execution, and force/moment feedback. A close view of the existing haptic-interface concept supports the explanation.
+3. **The application:** Explain why variation, controlled contact, and sustained physical effort make finishing difficult to automate.
+4. **Development:** Describe stability and adaptability as design objectives. Keep future data-assisted capabilities separate from the first system and state the concept/technical-development stage explicitly.
+5. **Company:** The supplied founder background and education, without invented team members, customers, or credentials.
+6. **Contact:** Repeat the application conversation action, offer the existing meeting link, and expose email, telephone, and location.
 
-1. **Positioning:** Lead with the existing manufacturing-flexibility promise and supporting statement.
-2. **Who SYNA is:** Explain the company and its human–robot collaboration vision.
-3. **The industry challenge:** Establish why high-precision, low-volume manufacturing remains dependent on scarce expertise.
-4. **The mission:** Show how SYNA's existing system description addresses that challenge.
-5. **Company and founder:** Ground the vision in the existing founder background and company location.
-6. **Contact:** End with the existing partner invitation, meeting link, and founder contact details.
-
-Each section should answer one question. Long copy remains intact, but line length, spacing, and emphasis make it easy to scan.
+Keep paragraphs short and concrete. Explain “bilateral haptic” as a two-way relationship. Do not turn proposed benefits into measured results or renderings into evidence of an operating prototype. The copyright line identifies SYNA; the displayed HTML5 UP credit and unused demo HTML pages have been removed. Historical license files remain intact.
 
 ## Visual system
 
-### Color
+| Role | Value / rule |
+| --- | --- |
+| Main canvas | Ink `#0b1720` |
+| Development surface | Navy `#11232e` |
+| Primary accent | Cyan `#79d9e8` |
+| Light reading surface | Paper `#f3f6f6` |
+| Text on light | `#162d37`; supporting text `#50636c` |
+| Supporting text on dark | `#b0c1c9` |
+| Dividers | `#cbd5d9` on light; `#344852` on dark |
+| Typeface | Assistant, weights 400–800; Arial/sans-serif fallback |
+| Main copy | 18px desktop / 17px mobile at the default browser font size |
+| Secondary labels | 14px minimum at the default browser font size |
+| Content width | Maximum 79rem; 48px desktop, 32px tablet, 20px mobile side gutters |
+| Section spacing | 104px desktop, 72px tablet, 60px mobile |
+| Shape | Fine straight rules and small 3–4px corner radii |
+| Controls | At least 44px high; primary buttons at least 52px |
 
-- **Ink:** `#07111F` for the main canvas and high-confidence sections.
-- **Deep navy:** `#0B1B2D` for layered surfaces.
-- **Electric cyan:** `#28C7E9` as the primary interactive and technical accent, derived from the existing logo.
-- **Signal blue:** `#5B8CFF` as a restrained secondary accent.
-- **Cloud:** `#F2F5F7` for light editorial sections.
-- **White:** `#FFFFFF` for primary text on dark surfaces.
-- **Muted text:** cool gray-blue values for supporting copy; never below accessible contrast.
+Headlines scale fluidly and use deliberate phrase breaks. Text and buttons remain separate from imagery. Body copy stays at comfortable line lengths. The alternating surfaces follow narrative roles rather than repeating a card layout in every section.
 
-Accent colors identify interaction and structure. They do not become decorative gradients across every surface.
+## Asset policy and provenance
 
-### Typography
+Two existing concept images are integrated, with no new generated hardware:
 
-- Use **Assistant** first, with **Heebo** and system sans-serif fallbacks, so Hebrew and English share a coherent voice.
-- Hero type is large, compact, and editorial; supporting copy remains calm and readable.
-- Body copy is limited to roughly 65–72 characters per line on wide screens.
-- Use weight and spacing for hierarchy. Avoid all-caps for Hebrew and use small uppercase labels only for language-neutral elements such as the brand wordmark or numeric section markers.
+- `assets/images/system-1680.webp` and `system-800.webp`: responsive exports of `../Visual_Asset/assets/website/hero/SYNA_Website_Hero_Full_System_v1.png`, the approved-for-now website baseline identified in the existing production notes.
+- `assets/images/haptic-interface.webp`: export of `../Visual_Asset/assets/anchors/master_arm/SYNA_Master_Arm_Ergonomic.png`.
+- `assets/images/logo-light.png`: tightly bounded, resized export of the supplied `LOGO_LIGHT.png`.
+- `assets/images/favicon.png`: small export of the supplied `LOGO_SIMBOL.png`.
 
-### Layout
+Retain original artwork in its source location. These are compressed delivery derivatives; they do not change the mechanical design. The full-system image keeps its original ratio, complete workcell-left/operator-right composition, and physical orientation in both languages. Never mirror product imagery for RTL. Both content images have translated descriptions and explicit concept captions. The hero loads eagerly with a responsive source set; the second image loads lazily. The large system export is approximately 104KB; the haptic-interface export is approximately 24KB.
 
-- Use a centered maximum-width grid with generous outer gutters.
-- The hero occupies most of the opening viewport and pairs the promise with one existing product image.
-- Content sections alternate light and dark treatments, but share the same grid and rhythm.
-- Images are large rectangular editorial panels rather than small circles. Cropping should preserve the subject and look intentional.
-- Fine rules, corner marks, and a subtle technical grid reference precision without inventing product diagrams.
+## Bilingual working process
 
-### Components
+1. Edit and finalize English in `assets/i18n/en.js`.
+2. Translate the finalized English into `assets/i18n/he.js`, retaining identical keys and semantic scope.
+3. Run `node scripts/render-content.mjs` to refresh the full English HTML baseline and content-based CSS/script version strings.
+4. Run `node scripts/check-site.mjs`.
+5. Review both languages at narrow, tablet, and desktop widths, including contact links and image descriptions.
 
-- **Navigation:** A compact sticky header with the logo, existing anchor links, and language controls. It must remain usable in both directions and collapse cleanly on mobile.
-- **Buttons:** Rounded rectangles with clear primary and secondary hierarchy. Hover and focus states should be visible without moving layout.
-- **Section marker:** A small two-digit number and rule provide orientation without adding content.
-- **Image frame:** A bounded media panel with a subtle accent edge and optional existing section title as its accessible text.
-- **Contact panel:** A strong closing surface that keeps the existing invitation and contact routes together.
+Do not edit old `*.before-messaging-v1.js` snapshots as active copy. They are historical files and are not loaded by the page. Keep markup in translation values only for fields bound with `data-i18n-html`; ordinary strings use `textContent`. Do not nest another bound element inside a bound text element. The fallback renderer intentionally supports this simple markup convention.
 
-## Interaction and motion
+English is the initial language. The selected language is saved locally when storage is available. Hebrew sets both `lang="he"` and `dir="rtl"`; layout uses logical spacing, text follows reading direction, and directional link arrows mirror. Phone numbers and email addresses retain LTR direction. No-JavaScript visitors receive complete English text and working standard links; inactive language controls are hidden.
 
-- Use restrained entrance transitions for major blocks and a short word-stagger for the hero statement.
-- Keep smooth anchor navigation, but respect `prefers-reduced-motion`.
-- Use no autoplay video, replacement cursor, heavy parallax, or motion that competes with the technical story.
-- Keep pointer-reactive light confined to imagery and contact surfaces so it never obscures text or changes layout.
-- Navigation, language switching, email, meeting, and LinkedIn actions must remain keyboard accessible.
+## Interaction and accessibility
 
-### Motion references
+- Use semantic navigation, header, main, sections, articles, figures, and footer; maintain one H1 and an orderly H2/H3 hierarchy.
+- Keep visible focus rings, an actionable skip link, and meaningful labels for image-only brand links.
+- On small screens, expose the navigation through a button with `aria-expanded` and `aria-controls`. Escape closes it and returns focus. Selecting a navigation link, clicking outside, or moving keyboard focus outside closes it.
+- Preserve native anchors, email, telephone, calendar, and LinkedIn links. External web destinations use `noopener noreferrer`.
+- Indicate the current section while scrolling and the selected language with `aria-pressed`.
+- Never hide content pending an animation. Motion is limited to a short vertical entrance and control color transitions, disabled for reduced-motion preferences; smooth scrolling also respects that preference.
+- Without JavaScript the navigation stays in normal document flow, preventing the expanded link list from covering the content.
 
-- The hero word reveal and surface spotlights adapt interaction ideas from [React Bits](https://reactbits.dev/) Split Text, Animated Content, and Spotlight Card patterns.
-- The button sheen and slow technical-grid drift adapt the lightweight CSS micro-interaction approach found in [Uiverse](https://uiverse.io/)'s open-source button and pattern library.
-- All motion is reimplemented in plain CSS and JavaScript for this site; no external animation dependency is introduced.
+## Maintenance and delivery
 
-## Bilingual behavior
-
-- English is the default and uses left-to-right direction; Hebrew uses right-to-left direction.
-- Layout order, alignment, icon direction, and spacing follow the document direction automatically.
-- The language switch must remain visible and clearly indicate the active language.
-- Contact labels that were previously hard-coded are included in the translation system so the page does not mix languages unintentionally.
-
-## Responsive behavior
-
-- Desktop uses a 12-column editorial grid and side-by-side copy/media compositions.
-- Tablet reduces type scale and gutter size while preserving section hierarchy.
-- Mobile becomes a single-column story: copy first, image second, with touch-friendly controls and no horizontal overflow.
-- Dense contact information stacks vertically on narrow screens.
-
-## Accessibility and quality bar
-
-- Use semantic landmarks, meaningful heading order, descriptive alternatives for informative images, empty alternatives for decorative images, and a skip link.
-- Maintain visible keyboard focus and WCAG AA color contrast for normal text.
-- Provide a readable no-JavaScript baseline; JavaScript enables language switching and the compact mobile menu.
-- Avoid layout shifts by specifying image dimensions or aspect ratios.
-- Before completion, verify JSON and JavaScript syntax, local links and assets, bilingual content keys, responsive rendering, overflow, console errors, and the final text presentation.
+The site remains plain HTML/CSS/JavaScript with no framework or runtime package dependency. Existing GitHub Pages deployment is retained; this redesign does not migrate hosting. Use the included render/check scripts after any content, CSS, or JavaScript update so returning visitors receive a consistent version. Test production behavior using a local static server before publishing. See `QA_REPORT.md` for the checks and their limits.
